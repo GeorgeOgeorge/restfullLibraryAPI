@@ -31,7 +31,7 @@ public class GenreService {
         return this.genreRepository.findById(id);
     }
 
-    public Genre save(Genre genre) {
+    public Genre insert(Genre genre) {
         return this.genreRepository.save(genre);
     }
 

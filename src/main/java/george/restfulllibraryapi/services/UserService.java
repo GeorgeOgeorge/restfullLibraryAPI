@@ -31,7 +31,7 @@ public class UserService {
         return this.userRepository.findById(id);
     }
 
-    public User save(User user) {
+    public User insert(User user) {
         return this.userRepository.save(user);
     }
 

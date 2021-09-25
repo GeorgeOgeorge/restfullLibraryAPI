@@ -31,7 +31,7 @@ public class BookListService {
         return this.bookListRepository.findById(id);
     }
 
-    public BookList save(BookList bookList) {
+    public BookList insert(BookList bookList) {
         return this.bookListRepository.save(bookList);
     }
 

@@ -31,7 +31,7 @@ public class BookService {
         return this.bookRepository.findById(id);
     }
 
-    public Book save(Book book) {
+    public Book insert(Book book) {
        return this.bookRepository.save(book);
     }
 

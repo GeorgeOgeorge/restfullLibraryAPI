@@ -4,11 +4,13 @@ import george.restfulllibraryapi.dtos.responses.PublisherResponse;
 import george.restfulllibraryapi.models.Publisher;
 import george.restfulllibraryapi.repositories.PublisherRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
+@Service
 public class PublisherService {
 
     private PublisherRepository publisherRepository;
@@ -29,7 +31,7 @@ public class PublisherService {
         return this.publisherRepository.findById(id);
     }
 
-    public Publisher save(Publisher publisher) {
+    public Publisher insert(Publisher publisher) {
         return this.publisherRepository.save(publisher);
     }
 

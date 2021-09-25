@@ -32,7 +32,7 @@ public class ReviewService {
         return this.reviewRepository.findById(id);
     }
 
-    public Review save(Review review) {
+    public Review insert(Review review) {
         return this.reviewRepository.save(review);
     }
 

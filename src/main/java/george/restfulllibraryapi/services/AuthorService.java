@@ -32,7 +32,7 @@ public class AuthorService {
         return this.authorRepository.findById(id);
     }
 
-    public Author save(Author author) {
+    public Author insert(Author author) {
         return this.authorRepository.save(author);
     }
 
